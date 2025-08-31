@@ -34,8 +34,9 @@ werkzeug==2.0.2
 Flask 
 itsdangerous==2.0.1 
 python-Levenshtein 
- 
- 
+Django==4.2.3
+psycopg2-binary
+
 #jisshu 
 opencv-python-headless==4.7.0.68  
  python-dotenv==0.21.1  
@@ -54,4 +55,5 @@ apscheduler
 pyshorteners 
 pyromod 
 colorama
+
 
