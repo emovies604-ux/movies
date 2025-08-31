@@ -1,4 +1,4 @@
-# Upgrade tools (must be first)
+# Core build tools
 pip>=25.2
 setuptools>=65
 wheel
@@ -7,28 +7,30 @@ wheel
 pyrofork==2.3.43
 pyrogram @ https://github.com/Jisshubot/pyrogram/archive/refs/heads/dev.zip
 tgcrypto
+pyromod
 
 # Database
 pymongo==4.8.0
 motor==3.5.1
 marshmallow==3.18.0
 umongo==3.1.0
-psycopg2-binary
+dnspython==2.3.0
 
 # Movie/Media
 git+https://github.com/Joelkb/cinemagoer
 opencv-python-headless==4.7.0.68
-Pillow==9.4.0
+--only-binary=:all: Pillow
+Pillow==10.4.0
 ffmpeg-python>=0.2.0
 ffmpeg
 
-# Flask/Django stack
+# Web frameworks
 Flask
 gunicorn==20.1.0
 werkzeug==2.0.2
 itsdangerous==2.0.1
 jinja2
-Django==4.2.3
+Django==4.2.3   # (optional, only if you actually use Django)
 
 # Utilities
 aiofiles
@@ -38,7 +40,6 @@ telegraph
 ujson
 pyshorteners
 pytz
-dnspython==2.3.0
 python-dotenv==0.21.1
 python-decouple
 shortzy
@@ -52,6 +53,5 @@ speedtest==0.0.1
 search_engine_parser
 wget
 apscheduler
-pyromod
 colorama
 Heroku3
