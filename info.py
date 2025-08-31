@@ -71,7 +71,7 @@ REQUEST_CHANNEL = int(request_channel) if request_channel and id_pattern.search(
 START_IMG = (environ.get('START_IMG', 'https://graph.org/file/a0f0308ed9d57381fae6e-12422d91d7cca526f4.jpg')).split()
 FORCESUB_IMG = environ.get('FORCESUB_IMG', 'https://i.ibb.co/ZNC1Hnb/ad3f2c88a8f2.jpg')
 REFER_PICS = (environ.get("REFER_PICS", "https://envs.sh/PSI.jpg")).split() 
-PAYPICS = (environ.get('PAYPICS', 'https://envs.sh/_kA.jpg')).split()
+PAYPICS = (environ.get('PAYPICS', 'https://graph.org/file/5e7c8e0c5641d87e60329-edee20b976283b1322.jpg')).split()
 SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://graph.org/file/9f3f47c690bbcc67633c2.jpg'))
 REACTIONS = ["👀", "😱", "🔥", "😍", "🎉", "🥰", "😇", "⚡"]
 #---------------------------------------------------------------
